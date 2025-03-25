@@ -8,11 +8,13 @@ import './index.css';
 
 
 export function App () {
+    const [fechaCita, setFechaCita] = useState('');
     return(
         <div>
             <nav>
                 <span>
                     BARBER SHOP
+
                 </span>
                 <ul className="nave">
                     <li><a href="/">Inicio</a></li>
@@ -26,21 +28,24 @@ export function App () {
                     <MdPerson/>
                     <button>REGISTRARSE</button>
                 </div>
+                <div className='redes'>
+                    <button onClick={() => window.location.href="https://Facebook"} className='fc-button'><FaFacebook /></button>
+                    <button onClick={() => window.location.href="https://Twitter"}><FaXTwitter /></button>
+                    <button onClick={() => window.location.href="https://instagram"}><RiInstagramFill/></button>   
+                </div>
             </nav>
             <section>
                 BARBER SHOP <br />
                 <span> 
-                    Camina con estilo
+                    Camina con estilo<br></br>
+                    agendar cita
                 </span>
                 <div>
-                    <button>Agendar cita</button>
+                <input type='date' value={fechaCita} onChange={(e) => setFechaCita(e.target.value)}/>
                 </div>
             </section>
             <footer>
                 <div>
-                    <button className='fc-button'><FaFacebook /></button>
-                    <button><FaXTwitter /></button>
-                    <button><RiInstagramFill/></button>
                 </div>
                 <div>
                     <span>
@@ -55,8 +60,9 @@ export function App () {
                     </span>
                     <span>
                         <h3>Contacto</h3>
-                        <p>Telefono: 123456789</p>
-                        <p>Correo: barbershop@gmail.com</p>
+                        <a href="tel:123456789" className="no-style">Telefono: 123456789</a>
+                        <br />
+                        <a href="mailto:barbershop@gmail.com" className="no-style">Correo: barbershop@gmail.com</a>
                     </span>
                 </div>
             </footer>
