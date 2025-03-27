@@ -11,6 +11,7 @@ export function App () {
     const [fechaCita, setFechaCita] = useState('');
     return(
         <div>
+            {/* NavBar component */}
             <NavBar />
             <section>
                 BARBER SHOP <br />
