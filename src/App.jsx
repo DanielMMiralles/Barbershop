@@ -20,7 +20,8 @@ export function App () {
                     agendar cita
                 </span>
                 <div>
-                <input type='date' value={fechaCita} onChange={(e) => setFechaCita(e.target.value)}/>
+                <input type='date' value={fechaCita} onChange={(e) => {setFechaCita(e.target.value);}}/>
+                {fechaCita}
                 </div>
             </section>
             <footer>
