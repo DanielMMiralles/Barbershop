@@ -21,13 +21,17 @@ ul{
 
 
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: #33333300 1px solid;
     border-radius: 30px ;
     font-style: sans-serif;
     font-family: "Arial Black";
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .nave li:hover{
@@ -48,7 +52,8 @@ nav {
     background-color:beige;
     padding: 0px 10px 0px 10px;
     transition: box-shadow 0.5s ease-in-out;
-
+    flex: 1 1 auto;
+    max-width: 150px;
 }
 
 body{
@@ -88,4 +93,16 @@ body{
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
-
+@media (max-width: 768px) { /* Cambia el valor según tus necesidades para que se vea bien en tlf, 
+    se ajusta una condicion que si cumplida se hace lo de abajo*/
+    nav {
+        flex-direction: column;
+    }
+    .nave {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+        justify-content: center; /* Centra los elementos en cada fila */
+        gap: 10px; /* Espaciado entre los elementos */
+        width: 100%;
+    }
+}
