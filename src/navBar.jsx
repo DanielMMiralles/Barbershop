@@ -19,7 +19,7 @@ export const NavBar = () => {
         </ul>
         <div className="user">
             <MdPerson />
-            <button>REGISTRARSE</button>
+            <button id="regBut" onClick={() => window.location.href="/Registro"}>REGISTRARSE</button>
         </div>
         <div className="redes">
             <button onClick={() => window.location.href="https://Facebook"} className="fc-button">
