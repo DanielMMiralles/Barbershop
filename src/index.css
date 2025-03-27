@@ -24,7 +24,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
     border: #33333300 1px solid;
     border-radius: 30px ;
     font-style: sans-serif;
@@ -38,12 +37,18 @@ nav {
     transform: translateY(-3px);
 }
 
+.nave {
+    list-style: none;
+}
+
 .nave li {
     text-align: center;
     margin-right: 30px;
     border-radius: 20px;
-    padding: 5px;
+    background-color:beige;
+    padding: 0px 10px 0px 10px;
     transition: box-shadow 0.5s ease-in-out;
+
 }
 
 body{
@@ -74,15 +79,13 @@ body{
     text-decoration: none; /* Elimina el subrayado */
 }
 
-.regBut{
-    background-color: #f0f0f0;
-    border: #333 1px solid;
+#regBut{
+    background-color: beige;
     border-radius: 30px;
     padding: 5px;
     margin: 10px;
-    font-size: 1.5rem;
     font-family: "Arial Black";
-    font-style: sans-serif;
-    color: #333;
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
+
+

@@ -8,14 +8,14 @@ import './index.css';
 export const NavBar = () => {
     return(
     <nav>
-        <span>BARBER SHOP</span>
+        <span >BARBER SHOP</span>
         <ul className="nave">
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/about">Ubicacion</a></li>
-            <li><a href="/contact">Barberos</a></li>
-            <li><a href="/contact">Servicios</a></li>
-            <li><a href="/contact">Galeria</a></li>
-            <li><a href="/contact">Contacto</a></li>
+            <li><a className="no-style" href="/">Inicio</a></li>
+            <li><a className="no-style" href="/Ubicacion">Ubicacion</a></li>
+            <li><a className="no-style" href="/Barberos">Barberos</a></li>
+            <li><a className="no-style" href="/Servicios">Servicios</a></li>
+            <li><a className="no-style" href="/Galeria">Galeria</a></li>
+            <li><a className="no-style" href="/Contacto">Contacto</a></li>
         </ul>
         <div className="user">
             <MdPerson />
