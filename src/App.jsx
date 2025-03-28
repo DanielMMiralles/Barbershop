@@ -3,7 +3,8 @@ import { MdPerson } from "react-icons/md"
 import { FaFacebook } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaXTwitter } from "react-icons/fa6";
-import './index.css';
+import './Navbar.css';
+import './App.css' ;
 import {NavBar} from "./navBar.jsx";
 
 
@@ -13,16 +14,27 @@ export function App () {
         <div>
             {/* NavBar component */}
             <NavBar />
+            <br/><br/><br/><br/>
             <section>
-                BARBER SHOP <br />
-                <span> 
-                    Camina con estilo<br></br>
-                    agendar cita
-                </span>
-                <div>
-                <input type='date' value={fechaCita} onChange={(e) => {setFechaCita(e.target.value);}}/>
-                {fechaCita}
+           <div className="contenedor">
+                <div className="Descripcion">
+                    <h2>aBienvenidos a "Nombre de la Barbería" - Tu estilo, nuestro arte</h2><br />
+                    <p>En "Nombre de la Barbería", donde la elegancia se encuentra con la precisión. Nuestro equipo de barberos altamente capacitados y apasionados está listo para brindarte un servicio excepcional en cada visita. Desde cortes de cabello hasta tratamientos de barba y peinados, estamos aquí para hacer que tu visión se convierta en realidad. ¡Únete a nosotros y descubre la artesanía que nos define. ¡Tu estilo, nuestra pasión!</p>
                 </div>
+                <div className="Descripcion">
+                    <h2>bBienvenidos a "Nombre de la Barbería" - Tu estilo, nuestro arte</h2><br />
+                    <p>En "Nombre de la Barbería", donde la elegancia se encuentra con la precisión. Nuestro equipo de barberos altamente capacitados y apasionados está listo para brindarte un servicio excepcional en cada visita. Desde cortes de cabello hasta tratamientos de barba y peinados, estamos aquí para hacer que tu visión se convierta en realidad. ¡Únete a nosotros y descubre la artesanía que nos define. ¡Tu estilo, nuestra pasión!</p>
+                </div>
+                <div className="Descripcion">
+                    <h2>cBienvenidos a "Nombre de la Barbería" - Tu estilo, nuestro arte</h2><br />
+                    <p>En "Nombre de la Barbería", donde la elegancia se encuentra con la precisión. Nuestro equipo de barberos altamente capacitados y apasionados está listo para brindarte un servicio excepcional en cada visita. Desde cortes de cabello hasta tratamientos de barba y peinados, estamos aquí para hacer que tu visión se convierta en realidad. ¡Únete a nosotros y descubre la artesanía que nos define. ¡Tu estilo, nuestra pasión!</p>
+                </div>
+            </div>
+            <div>
+            
+                <input type='date' value={fechaCita} onChange={(e) => {setFechaCita(e.target.value);}}/>
+                {fechaCita}{/*muestra la fecha pa probar */}
+            </div>
             </section>
             <footer>
                 <div>
