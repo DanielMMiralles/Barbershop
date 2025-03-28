@@ -1,0 +1,29 @@
+.Descripcion1{
+    width: 100%;
+    position:relative;
+    background-color: beige;
+    border-radius: inherit;
+    padding: 0% 2% 0% 2%;
+    z-index: 1;
+    opacity: 1;
+}
+
+.contenedor{
+    width: 40%;
+    display: flex;
+    position: relative;
+    margin: 0 0 10px 0;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px 0 #333;
+}
+
+@media (max-width: 768px) {
+    .contenedor{
+        width: 100%;
+        height: auto    ;
+    }
+    .Descripcion{
+        width: 100%;
+        height: auto    ;
+    }
+}
