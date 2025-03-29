@@ -43,9 +43,11 @@ export function App () {
             <section>
            <div className="contenedor">{/*CONTENEDOR PRINCIPAL por si se agg mas datos*/}
                 <div className="Descripcion1">
-                    <h2>{barbeOps[currentIndex1]}</h2>
-                    <p>{descriptions[currentIndex]}</p>
+                    <h2 className='info1'>{barbeOps[currentIndex1]}</h2>
+                    <p className='info2'>{descriptions[currentIndex]}</p>
                 </div>
+                <img src='https://institutonoa.com.ar/wp-content/uploads/2021/10/barberia_.jpg' id="imagen"></img>
+                <circle id="circulo"></circle>
             </div>
             <div>
                 <input type='date' value={fechaCita} onChange={(e) => {setFechaCita(e.target.value);}}/>

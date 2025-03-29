@@ -1,22 +1,36 @@
 .Descripcion1{
-    width: 100%;
+    width: 40%;
     position:relative;
     background-color: beige;
     border-radius: inherit;
     padding: 0% 2% 0% 2%;
     z-index: 1;
     opacity: 1;
+    box-shadow: 0 5px 7px 0 #333;
 }
 
 .contenedor{
-    width: 40%;
+    width: 100%;
     display: flex;
     position: relative;
     margin: 0 0 10px 0;
     border-radius: 20px;
-    box-shadow: 0 5px 7px 0 #333;
 }
+#imagen{
+    width: 60%;
+    height: auto;
+    border-radius: 500px;
+    margin-left: 30px;
+    box-shadow: 0 5px 7px 0 #333;
 
+}
+.info1{
+    font-style: sans-serif;
+    font-family: "Arial Black";
+}
+.info2{
+    font-family: "Arial";
+}
 @media (max-width: 768px) {
     .contenedor{
         width: 100%;
