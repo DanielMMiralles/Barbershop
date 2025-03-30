@@ -8,7 +8,7 @@ import './Navbar.css';
 export const NavBar = () => {
     return(
     <nav>
-        <span className="Titulo">BARBER SHOP</span>
+        <h1 className="Titulo">BARBER SHOP</h1>
         <ul className="nave">
             <li><a className="no-style" href="/">Inicio</a></li>
             <li><a className="no-style" href="/Ubicacion">Ubicacion</a></li>

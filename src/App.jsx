@@ -26,55 +26,41 @@ export function App () {
     useEffect(() => { //FUNCION QUE CALCULA TIEMPO ENTRE CAMBIO DE TEXTOS
         const interval = setInterval(() => {
         setCurrentIndex2((prevIndex) => (prevIndex + 1) % descriptions.length)
-        }, 3000)
+        }, 7000)
         return () => clearInterval(interval) }, [])
 
     useEffect(() => { //FUNCION QUE CALCULA TIEMPO ENTRE CAMBIO DE TEXTOS
             const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % barbeOps.length)
-            }, 3000)
+            }, 7000)
             return () => clearInterval(interval) }, [])
     
     return(
-        <div>
+        <div className='body'>
             {/* NavBar componente */}
             <NavBar />
             <br/><br/><br/><br/>
-            <section>
-           <div className="contenedor">{/*CONTENEDOR PRINCIPAL por si se agg mas datos*/}
-                <div className="Descripcion1">
-                    <h2 className='info1'>{barbeOps[currentIndex1]}</h2>
-                    <p className='info2'>{descriptions[currentIndex]}</p>
+            <div className='imagen'>
+                <div className='circulo'>
+                    <div className=' ovalo'>
+                    <div className='rectangulo'>
+                    
+                    </div>
+                    </div>
+                    <div className=' ovalo1'></div>
                 </div>
-                <img src='https://institutonoa.com.ar/wp-content/uploads/2021/10/barberia_.jpg' id="imagen"></img>
-                <circle id="circulo"></circle>
+                <div className="contenedor">{/*CONTENEDOR PRINCIPAL por si se agg mas datos*/}
+                    <div className="Descripcion1">
+                        <h2 className='info1'>{barbeOps[currentIndex1]}</h2>
+                        <p className='info2'>{descriptions[currentIndex]}</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <input type='date' value={fechaCita} onChange={(e) => {setFechaCita(e.target.value);}}/>
-                {fechaCita}{/*muestra la fecha pa probar */}
-            </div>
-            </section>
             <footer>
-                <div>
-                </div>
-                <div>
-                    <span>
-                        <h3>Barber Shop</h3>
-                        <p>Barber Shop es una empresa dedicada a brindar servicios de barbería de alta calidad a nuestros clientes. Nuestro equipo de barberos altamente capacitados y experimentados se encargará de brindarle un servicio personalizado y de calidad en cada una de nuestras citas.</p>
-                    </span>
-                    <span>
-                        <h3>Horario</h3>
-                        <p>Lunes a Viernes: 9:00 AM - 8:00 PM</p>
-                        <p>Sábados: 10:00 AM - 4:00 PM</p>
-                        <p>Domingos: Cerrado</p>
-                    </span>
-                    <span>
-                        <h3>Contacto</h3>
-                        <a href="tel:123456789" className="no-style">Telefono: 123456789</a>
-                        <br />
-                        <a href="mailto:barbershop@gmail.com" className="no-style">Correo: barbershop@gmail.com</a>
-                    </span>
-                </div>
+                <h3>Contacto</h3>
+                <a href="tel:123456789" className="no-style">Telefono: 123456789</a>
+                <br />
+                <a href="mailto:barbershop@gmail.com" className="no-style">Correo: barbershop@gmail.com</a>
             </footer>
         </div>
     )

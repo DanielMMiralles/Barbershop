@@ -1,5 +1,5 @@
 .Descripcion1{
-    width: 40%;
+    width: 100%;
     position:relative;
     background-color: beige;
     border-radius: inherit;
@@ -10,34 +10,91 @@
 }
 
 .contenedor{
-    width: 100%;
+    width: 40%;
     display: flex;
     position: relative;
-    margin: 0 0 10px 0;
+    margin: 0 0 0 10%;
     border-radius: 20px;
-}
-#imagen{
-    width: 60%;
-    height: auto;
-    border-radius: 500px;
-    margin-left: 30px;
-    box-shadow: 0 5px 7px 0 #333;
-
 }
 .info1{
     font-style: sans-serif;
-    font-family: "Arial Black";
+    font-family:Helvetica;
 }
 .info2{
-    font-family: "Arial";
+    font-family:Helvetica;
+}
+.circulo {
+    height: 70vh; 
+    width: 70vh; 
+    border: black 3px solid;
+    border-radius: 35vh;
+    display: flex;
+    justify-content: center;
+    overflow:visible;
+    position: relative; 
+    margin-bottom: 20px;
+}
+.ovalo {
+    height: 90%; 
+    width: 90%; 
+    border-radius: 50%;
+    border: #333 3px solid;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+}
+.ovalo1 {
+    height: 90%; 
+    width: 90%; 
+    border-radius: 50%;
+    border: #333 3px solid;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+    background-image: url(https://institutonoa.com.ar/wp-content/uploads/2021/10/barberia_.jpg);
+    background-size: cover; /* o contain, dependiendo de tus preferencias */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.rectangulo {
+    background-color: #333;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateZ(-45deg);
+    height: 64vh; 
+    width: 200%; 
+    border-radius: 0 300px 300px 0; 
+    transform: translate(-43%, 35% ) rotateZ(-45deg); 
+    z-index: 0;
+}
+.imagen{
+    display: flex;
+}
+footer{
+    z-index: 2;
+    position: relative;
 }
 @media (max-width: 768px) {
     .contenedor{
         width: 100%;
         height: auto    ;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 0;
     }
-    .Descripcion{
-        width: 100%;
+    .Descripcion1{
+        width: 96%;
         height: auto    ;
     }
+    .imagen{
+        display:block;
+
+    }
+
 }
